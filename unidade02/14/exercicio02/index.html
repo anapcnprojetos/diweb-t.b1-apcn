@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 _ Exercício 02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+            font-family: monospace, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 800px;
+        }
+
+        input,
+        textarea,
+        select {
+            margin: 5px 0px;
+            padding: 5px;
+            border: 1px solid coral;
+            color: coral;
+        }
+
+        .button {
+            padding: 10px 10px;
+            background-color: coral;
+            color: white;
+            font-weight: 600;
+            border: none;
+        }
+
+        .obrigatorio {
+            color: red;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <h1>Ouvidoria</h1>
+        <label for="nome">Nome</label>
+        <span class="obrigatorio">*</span>
+        <br>
+        <input type="text" name="nome" id="nome" size="100" required placeholder="Informe seu nome.">
+        <br>
+        <label for="email">Email</label>
+        <span class="obrigatorio">*</span>
+        <br>
+        <input type="text" name="email" id="email" size="100" required placeholder="Informe seu e-mail.">
+        <br>
+        <select name="tipo" id="tipo" required>
+            <option value="">Selecione...</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio">Elogio</option>
+            <option value="sugestao">Sugestão</option>
+        </select>
+        <br>
+        <label for="mensagem">Mensagem</label>
+        <span class="obrigatorio">*</span>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="98" rows="5" placeholder="Digite sua mensagem aqui."></textarea>
+        <br>
+        <label for="anexo">Anexo</label>
+        <span class="obrigatorio">(opcional - Aceita somente arquivos PDF)</span>
+        <br>
+        <input type="file" name="anexo" id="anexo" accept=".pdf">
+        <br>
+        <input type="submit" value="Enviar" id="button">
+        <input type="reset" value="Limpar" id="button">
+    </form>
+</body>
+
+</html>
