@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+}
+main section{
+    width: 100px;
+    height: 10vh;
+    border: 2px solid black;
+    /*display: flex;
+    flex-direction: row-reverse;*/
+    /*display flex permite que o container se adapte a tela
+    flex direction vai definir a ireção que quero os itens do meu container
+    justify-content: space - between= entre eles | - aroud= espaço dentro da caixa | -evenly= espaço entre eles iguais*/
+}
+main section div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.box01{
+    background-color: blueviolet;
+}
+.box02 {
+    background-color: cornflowerblue;
+}
+.box03 {
+    background-color: crimson;
+}
