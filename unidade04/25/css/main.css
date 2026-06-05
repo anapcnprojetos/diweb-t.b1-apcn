@@ -1,0 +1,47 @@
+main {
+    background-color: #ecf0f1;
+    height: 100vh;
+    display: flex;
+}
+main section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 80%;
+}
+main section article {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border-left: 5px solid #16a085;
+}
+main section article h1 {
+    color: #16a085;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}   
+main section article p {
+    color: #333;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+main aside {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    width: 20%;
+}
+main aside p, main aside ul {
+    color: #000;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+main aside ul {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+main aside ul li {
+    padding-bottom: 5px;
+    line-height: 1.4;
+}
